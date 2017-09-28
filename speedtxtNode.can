@@ -1,0 +1,25 @@
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+
+on message Speeds
+{
+	write("Speed message received!! ");
+  
+}
+
+on signal_update engineSpeed
+{
+	if ( $engineSpeed > 8 )
+  {
+    write("Engine limit exceeded");
+    $vehicleSpeed = 32;
+  }
+}

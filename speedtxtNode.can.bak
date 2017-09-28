@@ -1,0 +1,16 @@
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+
+on message Speeds
+{
+	write("Speed message received!! ");
+  
+}
